@@ -16,7 +16,6 @@ a {
   }
 }
 
-
 .btn {
   display: block;
   padding: 17px 0;
@@ -27,9 +26,10 @@ a {
   font-weight: 600;
   line-height: 19.2px;
 
-  @media (max-width: 744px) {
-    font-size: 13px;
+  @media (max-width: 700px) {
+    font-size: 12px;
     padding: 12px 0;
+    width: 157px;
   }
 }
 .btn-fill {
@@ -41,22 +41,31 @@ a {
 }
 
 .swiper {
-  width: 100%;
+  width: 720px;
   height: 100%;
-  @media (max-width: 744px) {
+
+  @media (max-width: 700px) {
+    width: 500px;
+  }
+
+  @media (max-width: 460px) {
+    width: 350px;
   }
 }
 
 .promo__wrap {
-  display: flex;
-  background: $blue;
-  justify-content: end;
-  align-items: center;
+  background: url('./../img/bg.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
 
-  @media (max-width: 1530px) {
-    flex-direction: column;
+
+  
+
+  @media (max-width: 1080px) {
+    grid-template-columns: 100%;
     background: $white;
   }
 }
-
-

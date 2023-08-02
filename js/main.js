@@ -5,10 +5,10 @@ const swiper = new Swiper('.swiper', {
   parallax: true,
   speed: 1000,
 
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
 
   keyboard: {
     enabled: true,
