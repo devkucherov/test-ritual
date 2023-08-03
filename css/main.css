@@ -154,6 +154,11 @@ a:hover {
   width: 720px;
   height: 100%;
 }
+@media (min-width: 1080px) and (max-width: 1600px) {
+  .swiper {
+    width: 540px;
+  }
+}
 @media (max-width: 700px) {
   .swiper {
     width: 500px;
@@ -172,6 +177,27 @@ a:hover {
   background-size: cover;
   display: grid;
   grid-template-columns: repeat(2, 50%);
+}
+@media (min-width: 1990px) {
+  .promo__wrap::after {
+    content: "Спецпредложение";
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    right: 0;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 10px 10px 10px 40px;
+    text-align: right;
+    width: 250px;
+    height: 50px;
+    background: url("./../../img/bg-red.svg");
+    background-repeat: no-repeat;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
 }
 @media (max-width: 1080px) {
   .promo__wrap {
@@ -201,6 +227,14 @@ a:hover {
     background: url("./../img/bg.svg");
     background-repeat: no-repeat;
     background-size: cover;
+  }
+}
+@media (min-width: 1990px) {
+  .promo__content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 300px;
   }
 }
 
@@ -298,6 +332,21 @@ a:hover {
     font-size: 16px;
   }
 }
+@media (min-width: 1990px) {
+  .promo__slider::after {
+    display: none;
+  }
+}
+@media (min-width: 1990px) {
+  .promo__slider {
+    justify-self: center;
+  }
+}
+@media (min-width: 1080px) and (max-width: 1600px) {
+  .promo__slider {
+    width: 550px;
+  }
+}
 @media (max-width: 1080px) {
   .promo__slider {
     width: 100%;
@@ -323,6 +372,11 @@ a:hover {
           justify-content: end;
   width: 720px;
   padding-top: 25px;
+}
+@media (min-width: 1080px) and (max-width: 1600px) {
+  .slide {
+    width: 550px;
+  }
 }
 @media (max-width: 700px) {
   .slide {

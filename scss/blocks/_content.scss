@@ -12,6 +12,11 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  @media (min-width: 1990px) {
+    justify-content: center;
+    padding-left: 300px;
+  }
 }
 .promo__content-wrap {
   padding-left: 20px;
